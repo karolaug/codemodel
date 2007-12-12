@@ -1,0 +1,20 @@
+Source: libcodemodel-java
+Section: contrib/libs
+Priority: optional
+Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Uploaders: Varun Hiremath <varun@debian.org>, Torsten Werner <twerner@debian.org>
+Build-Depends: cdbs, debhelper (>= 5)
+Build-Depends-Indep: ant, sun-java5-jdk
+Standards-Version: 3.7.3
+Homepage: https://codemodel.dev.java.net/
+Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/libcodemodel-java
+Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/libcodemodel-java
+
+Package: libcodemodel-java
+Architecture: all
+Depends: sun-java5-jre | java1-runtime | java2-runtime
+Description: Java library for code generators
+ CodeModel is a Java library for code generators; it provides a way to
+ generate Java programs in a way much nicer than
+ PrintStream.println(). This project is a spin-off from the JAXB RI
+ for its schema compiler to generate Java source files.
