@@ -3,11 +3,11 @@
 # $1 = version
 TAR=../libcodemodel-java_$1.orig.tar.gz
 DIR=libcodemodel-java-$1.orig
-echo -n "Enter username for dev.java.net: "; read USERNAME
+#EXTRA_ARGS=--username xxx
 
 # clean up the upstream tarball
 svn export https://codemodel.dev.java.net/svn/codemodel/tags/codemodel-$1/ \
-    $DIR --username $USERNAME
+    $DIR $EXTRA_ARGS
 GZIP=--best tar -c -z -f $TAR $DIR
 rm -rf $DIR
 
