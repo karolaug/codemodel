@@ -392,3 +392,6 @@ License:
     distribute such responsibility on an equitable basis. Nothing
     herein is intended or shall be deemed to constitute any admission
     of liability.
+
+The Debian packaging is (C) 2007, Varun Hiremath <varun@debian.org> and
+is licensed under the GPL, see `/usr/share/common-licenses/GPL'.

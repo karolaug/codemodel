@@ -16,5 +16,6 @@ Depends: sun-java5-jre | java1-runtime | java2-runtime
 Description: Java library for code generators
  CodeModel is a Java library for code generators; it provides a way to
  generate Java programs in a way much nicer than
- PrintStream.println(). This project is a spin-off from the JAXB RI
- for its schema compiler to generate Java source files.
+ PrintStream.println(). This project is a spin-off from the JAXB
+ Reference Implementation for its schema compiler to generate Java
+ source files.
