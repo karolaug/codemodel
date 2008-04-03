@@ -1,3 +1,11 @@
+libcodemodel-java (2.0-2) UNRELEASED; urgency=low
+
+  * Switch to openjdk-6.
+  * Move package to main.
+  * Improve copyright file.
+
+ -- Torsten Werner <twerner@debian.org>  Thu, 03 Apr 2008 12:47:57 +0200
+
 libcodemodel-java (2.0-1) unstable; urgency=low
 
   * Initial release (Closes: #457492)
