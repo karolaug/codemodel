@@ -1,4 +1,4 @@
-libcodemodel-java (2.0-2) UNRELEASED; urgency=low
+libcodemodel-java (2.0-2) unstable; urgency=low
 
   * Switch to openjdk-6.
   * Move package to main.
