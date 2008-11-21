@@ -1,3 +1,9 @@
+libcodemodel-java (2.0-3) unstable; urgency=low
+
+  * Fix java bytecode / java runtime version mismatch (Closes: #503783)
+
+ -- Varun Hiremath <varun@debian.org>  Sat, 01 Nov 2008 03:18:24 -0400
+
 libcodemodel-java (2.0-2) unstable; urgency=low
 
   * Switch to openjdk-6.

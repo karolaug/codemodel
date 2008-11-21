@@ -5,7 +5,7 @@ Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.or
 Uploaders: Varun Hiremath <varun@debian.org>, Torsten Werner <twerner@debian.org>
 Build-Depends: cdbs, debhelper (>= 5)
 Build-Depends-Indep: ant, openjdk-6-jdk | sun-java5-jdk
-Standards-Version: 3.7.3
+Standards-Version: 3.8.0
 Homepage: https://codemodel.dev.java.net/
 Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/libcodemodel-java
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/libcodemodel-java
