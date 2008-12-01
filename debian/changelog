@@ -1,3 +1,9 @@
+libcodemodel-java (2.0+dak1-1) unstable; urgency=low
+
+  * Reupload with source (Closes: #507174)
+
+ -- Varun Hiremath <varun@debian.org>  Mon, 01 Dec 2008 02:45:57 -0500
+
 libcodemodel-java (2.0-3) unstable; urgency=low
 
   * Fix java bytecode / java runtime version mismatch (Closes: #503783)
