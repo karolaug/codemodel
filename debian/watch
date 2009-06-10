@@ -1,0 +1,2 @@
+version=3
+http://download.java.net/maven/2/com/sun/codemodel/codemodel/([\d.]+)/codemodel-([\d.]+)-sources\.jar
