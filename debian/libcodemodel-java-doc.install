@@ -1,2 +1,1 @@
-
-codemodel/target/apidocs/* usr/share/doc/libcodemodel-java/api
+target/site/apidocs/* usr/share/doc/libcodemodel-java/api
