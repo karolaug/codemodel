@@ -2,19 +2,48 @@ Source: libcodemodel-java
 Section: java
 Priority: optional
 Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
-Uploaders: Varun Hiremath <varun@debian.org>, Torsten Werner <twerner@debian.org>, Michael Koch <konqueror@gmx.de>
-Build-Depends: cdbs, debhelper (>= 7), openjdk-6-jdk, ant
-Standards-Version: 3.8.3
-Homepage: https://codemodel.dev.java.net/
+Uploaders:
+ Varun Hiremath <varun@debian.org>,
+ Torsten Werner <twerner@debian.org>,
+ Michael Koch <konqueror@gmx.de>,
+ James Page <james.page@canonical.com>
+Build-Depends: cdbs, debhelper (>= 7), default-jdk, maven-debian-helper
+Build-Depends-Indep:
+ ant,
+ ant-doc,
+ default-jdk-doc,
+ junit,
+ libmaven-compiler-plugin-java (>= 2.0.2),
+ libmaven-install-plugin-java,
+ libmaven-javadoc-plugin-java,
+ libmaven-javadoc-plugin-java (>= 2.6.1),
+ libsurefire-java (>= 2.4.3)
+Standards-Version: 3.9.2
+Homepage: http://codemodel.java.net/
 Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/libcodemodel-java
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/libcodemodel-java
 
 Package: libcodemodel-java
 Architecture: all
-Depends: openjdk-6-jre-headless | sun-java5-jre | java1-runtime | java2-runtime
+Depends: ${maven:Depends}, ${misc:Depends}
+Recommends: ${maven:OptionalDepends}
 Description: Java library for code generators
  CodeModel is a Java library for code generators; it provides a way to
  generate Java programs in a way much nicer than
  PrintStream.println(). This project is a spin-off from the JAXB
  Reference Implementation for its schema compiler to generate Java
  source files.
+
+Package: libcodemodel-java-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends}
+Suggests: libcodemodel-java
+Description: Documentation for Java library for code generators
+ CodeModel is a Java library for code generators; it provides a way to
+ generate Java programs in a way much nicer than
+ PrintStream.println(). This project is a spin-off from the JAXB
+ Reference Implementation for its schema compiler to generate Java
+ source files.
+ .
+ This package provides the API documentation for libcodemodel-java.

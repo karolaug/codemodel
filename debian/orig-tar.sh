@@ -1,14 +1,13 @@
 #!/bin/sh -e
 
-# $1 = version
-TAR=../libcodemodel-java_$1.orig.tar.gz
-DIR=libcodemodel-java-$1.orig
-#EXTRA_ARGS=--username xxx
+VERSION=$2
+TAR=../libcodemodel-java_$VERSION.orig.tar.gz
+DIR=libcodemodel-java-$VERSION.orig
 
 # clean up the upstream tarball
-svn export https://codemodel.dev.java.net/svn/codemodel/tags/codemodel-$1/ \
-    $DIR $EXTRA_ARGS
-GZIP=--best tar -c -z -f $TAR $DIR
+svn export https://svn.java.net/svn/codemodel~svn/tags/codemodel-$VERSION/ \
+    $DIR 
+GZIP=--best tar -c -z -f $TAR --exclude '*.jar' --exclude '*.class' $DIR
 rm -rf $DIR
 
 # move to directory 'tarballs'

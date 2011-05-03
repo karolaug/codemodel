@@ -1,2 +1,4 @@
 version=3
-http://download.java.net/maven/2/com/sun/codemodel/codemodel/([\d.]+)/codemodel-([\d.]+)-sources\.jar
+opts="uversionmangle=s/-(alpha|beta)-/~$1/" \
+  http://java.net/projects/codemodel/sources/svn/show/tags \
+  /projects/codemodel/sources/svn/show/tags/codemodel-(\d+).(\d+).* debian debian/orig-tar.sh

@@ -1,23 +1,11 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/class/ant.mk
 include /usr/share/cdbs/1/rules/debhelper.mk
+include /usr/share/cdbs/1/class/maven.mk
 
-JAVA_HOME_DIRS       := /usr/lib/jvm/java-6-openjdk /usr/lib/jvm/java-1.5.0-sun
-DEB_ANT_BUILD_TARGET := jar
-DEB_ANT_BUILDFILE    := debian/build.xml
-ANT_OPTS   	     := -Dant.build.javac.source=1.5 -Dant.build.javac.target=1.5
-
-ALL_JARS = $(wildcard *.jar)
-DEST_DIR = $(DEB_DESTDIR)/usr/share/java
-
-common-install-prehook-indep::
-	for jar in $(ALL_JARS); do                         \
-	  BASENAME=`basename $$jar .jar`;        	   \
-	  FULLNAME=$$BASENAME-$(DEB_UPSTREAM_VERSION).jar; \
-	  install -m 644 -D $$jar $(DEST_DIR)/$$FULLNAME;  \
-	  ln -s $$FULLNAME $(DEST_DIR)/$$BASENAME.jar;     \
-	done
+JAVA_HOME := /usr/lib/jvm/default-java
+DEB_MAVEN_DOC_TARGET := javadoc:jar javadoc:aggregate
+DEB_MAVEN_BUILD_TARGET := install
 
 get-orig-source:
-	sh debian/orig-tar.sh $(DEB_UPSTREAM_VERSION)
+	uscan --download-version $(DEB_UPSTREAM_VERSION) --force-download --rename
