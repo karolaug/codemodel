@@ -18,7 +18,7 @@ Build-Depends-Indep:
  libmaven-javadoc-plugin-java,
  libmaven-javadoc-plugin-java (>= 2.6.1),
  libsurefire-java (>= 2.4.3)
-Standards-Version: 3.9.2
+Standards-Version: 3.9.1
 Homepage: http://codemodel.java.net/
 Vcs-Svn: svn://svn.debian.org/svn/pkg-java/trunk/libcodemodel-java
 Vcs-Browser: http://svn.debian.org/wsvn/pkg-java/trunk/libcodemodel-java
