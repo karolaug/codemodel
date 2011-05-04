@@ -4,6 +4,7 @@ libcodemodel-java (2.1-1) unstable; urgency=low
   * Migrated project to maven + maven-debian-helper.
   * Added myself to Uploaders.
   * Updated Standards-Version to 3.9.1.
+  * Switched to source/format: 3.0 (quilt).
 
  -- James Page <james.page@canonical.com>  Wed, 27 Apr 2011 08:59:09 +0100
 

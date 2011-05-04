@@ -18,4 +18,3 @@
 
 junit junit jar s/3\..*/3.x/ * *
 s/ant/org.apache.ant/ * * s/.*/debian/ * *
-* * maven-plugin * * *
