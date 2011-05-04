@@ -1,22 +1,18 @@
 libcodemodel-java (2.1-1) unstable; urgency=low
 
+  [ James Page ]
   * New upstream release.
   * Migrated project to maven + maven-debian-helper.
   * Added myself to Uploaders.
   * Updated Standards-Version to 3.9.1.
   * Switched to source/format: 3.0 (quilt).
 
- -- James Page <james.page@canonical.com>  Wed, 27 Apr 2011 08:59:09 +0100
-
-libcodemodel-java (2.0+dak1-2) UNRELEASED; urgency=low
-
+  [Michael Koch]
   * Build-Depends on debhelper (>= 7).
-  * Moved Build-Depends-Indep into Build-Depends, removed alternative on sun-java5-jdk
   * Moved package to java section.
   * Added myself to Uploaders.
-  * Updated Standards-Version to 3.8.3.
 
- -- Michael Koch <konqueror@gmx.de>  Thu, 05 Nov 2009 17:46:02 +0100
+ -- James Page <james.page@canonical.com>  Wed, 27 Apr 2011 08:59:09 +0100
 
 libcodemodel-java (2.0+dak1-1) unstable; urgency=low
 
