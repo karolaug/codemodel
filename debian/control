@@ -1,12 +1,13 @@
 Source: libcodemodel-java
 Section: java
 Priority: optional
-Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
+Maintainer: Karol Auguštin <karol@augustin.pl>
 Uploaders:
  Varun Hiremath <varun@debian.org>,
  Torsten Werner <twerner@debian.org>,
  Michael Koch <konqueror@gmx.de>,
  James Page <james.page@canonical.com>
+ Karol Auguštin <karol@augustin.pl>
 Build-Depends: cdbs, debhelper (>= 7), default-jdk, maven-debian-helper
 Build-Depends-Indep:
  ant,
