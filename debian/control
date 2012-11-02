@@ -14,6 +14,7 @@ Build-Depends-Indep:
  ant-doc,
  default-jdk-doc,
  junit,
+ libmaven-enforcer-plugin-java,
  libmaven-compiler-plugin-java (>= 2.0.2),
  libmaven-install-plugin-java,
  libmaven-javadoc-plugin-java,
