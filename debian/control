@@ -19,6 +19,7 @@ Build-Depends-Indep:
  libmaven-install-plugin-java,
  libmaven-javadoc-plugin-java,
  libmaven-javadoc-plugin-java (>= 2.6.1),
+ libjvnet-java,
  libsurefire-java (>= 2.4.3)
 Standards-Version: 3.9.1
 Homepage: http://codemodel.java.net/
