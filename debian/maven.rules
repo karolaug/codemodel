@@ -16,5 +16,5 @@
 # and version starting with 3., replacing the version with 3.x
 #   junit junit jar s/3\\..*/3.x/
 
-junit junit jar s/3\..*/3.x/ * *
+junit junit jar s/4\..*/4.x/ * *
 s/ant/org.apache.ant/ * * s/.*/debian/ * *
